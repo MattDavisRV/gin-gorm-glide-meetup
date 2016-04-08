@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/davecgh/go-spew/spew"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/mattn/go-sqlite3"
@@ -65,8 +64,6 @@ func getSingleUser(c *gin.Context) {
 	user := User{}
 
 	db.Find(&user, id)
-
-	spew.Sdump(user)
 
 	c.JSON(http.StatusOK, user)
 
