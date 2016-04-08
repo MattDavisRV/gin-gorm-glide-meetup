@@ -1,0 +1,5 @@
+package: github.com/mattdavisrv/gin-gorm-glide-meetup
+import:
+- package: github.com/gin-gonic/gin
+- package: github.com/jinzhu/gorm
+- package: github.com/mattn/go-sqlite3
